@@ -10,9 +10,18 @@ import UIKit
 
 class ItemCell: UICollectionViewCell {
 
+    @IBOutlet weak var loveButton: UIButton!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
+        self.changeLoveButtonColor()
+    
     }
-
+    
+    
+    func changeLoveButtonColor()
+    {
+        let stencil = self.loveButton.imageView?.image?.withRenderingMode(.alwaysTemplate)
+        self.loveButton.setImage(stencil, for: .normal)
+        self.loveButton.tintColor = UIColor.white
+    }
 }

@@ -1,19 +1,58 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="ItemCell" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ItemCell" id="gTV-IL-0wX" customClass="ItemCell" customModule="fril" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="313" height="230"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
-                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                <rect key="frame" x="0.0" y="0.0" width="313" height="230"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mac" translatesAutoresizingMaskIntoConstraints="NO" id="X14-72-o4V">
+                        <rect key="frame" x="0.0" y="0.0" width="313" height="230"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¥ 1,480" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nuE-AE-PGz">
+                        <rect key="frame" x="8" y="206" width="47" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="13"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lXL-f9-jKI">
+                        <rect key="frame" x="285" y="203" width="20" height="22"/>
+                        <state key="normal" image="heart-outline"/>
+                    </button>
+                </subviews>
             </view>
+            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="X14-72-o4V" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="FCx-j3-hcF"/>
+                <constraint firstItem="nuE-AE-PGz" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leadingMargin" id="KoB-dR-rei"/>
+                <constraint firstAttribute="trailingMargin" secondItem="lXL-f9-jKI" secondAttribute="trailing" id="Qsz-jk-1ei"/>
+                <constraint firstAttribute="bottomMargin" secondItem="nuE-AE-PGz" secondAttribute="bottom" id="eAb-d4-lV5"/>
+                <constraint firstAttribute="bottom" secondItem="X14-72-o4V" secondAttribute="bottom" id="hxq-4s-yOB"/>
+                <constraint firstItem="lXL-f9-jKI" firstAttribute="centerY" secondItem="nuE-AE-PGz" secondAttribute="centerY" id="jiR-b2-wPo"/>
+                <constraint firstItem="X14-72-o4V" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="nvK-Wh-JNA"/>
+                <constraint firstAttribute="trailing" secondItem="X14-72-o4V" secondAttribute="trailing" id="utG-EU-7BB"/>
+            </constraints>
+            <size key="customSize" width="313" height="230"/>
+            <connections>
+                <outlet property="loveButton" destination="lXL-f9-jKI" id="CDK-Tv-l2g"/>
+            </connections>
+            <point key="canvasLocation" x="-164.5" y="-38"/>
         </collectionViewCell>
     </objects>
+    <resources>
+        <image name="heart-outline" width="20" height="20"/>
+        <image name="mac" width="900" height="506"/>
+    </resources>
 </document>

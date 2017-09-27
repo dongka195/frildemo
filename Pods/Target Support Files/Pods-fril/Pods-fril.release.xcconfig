@@ -1,0 +1,11 @@
+ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES
+FRAMEWORK_SEARCH_PATHS = $(inherited) "$PODS_CONFIGURATION_BUILD_DIR/BBBadgeBarButtonItem" "$PODS_CONFIGURATION_BUILD_DIR/CarbonKit" "$PODS_CONFIGURATION_BUILD_DIR/Gaikan" "$PODS_CONFIGURATION_BUILD_DIR/KVOController" "$PODS_CONFIGURATION_BUILD_DIR/MMTabBarAnimation" "$PODS_CONFIGURATION_BUILD_DIR/Nuke" "$PODS_CONFIGURATION_BUILD_DIR/Spring" "$PODS_CONFIGURATION_BUILD_DIR/SwiftHEXColors" "$PODS_CONFIGURATION_BUILD_DIR/SwifterSwift"
+GCC_PREPROCESSOR_DEFINITIONS = $(inherited) COCOAPODS=1
+LD_RUNPATH_SEARCH_PATHS = $(inherited) '@executable_path/Frameworks' '@loader_path/Frameworks'
+OTHER_CFLAGS = $(inherited) -iquote "$PODS_CONFIGURATION_BUILD_DIR/BBBadgeBarButtonItem/BBBadgeBarButtonItem.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/CarbonKit/CarbonKit.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Gaikan/Gaikan.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/KVOController/KVOController.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/MMTabBarAnimation/MMTabBarAnimation.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Nuke/Nuke.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/Spring/Spring.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwiftHEXColors/SwiftHEXColors.framework/Headers" -iquote "$PODS_CONFIGURATION_BUILD_DIR/SwifterSwift/SwifterSwift.framework/Headers"
+OTHER_LDFLAGS = $(inherited) -framework "BBBadgeBarButtonItem" -framework "CarbonKit" -framework "Gaikan" -framework "KVOController" -framework "MMTabBarAnimation" -framework "Nuke" -framework "Spring" -framework "SwiftHEXColors" -framework "SwifterSwift"
+OTHER_SWIFT_FLAGS = $(inherited) "-D" "COCOAPODS"
+PODS_BUILD_DIR = $BUILD_DIR
+PODS_CONFIGURATION_BUILD_DIR = $PODS_BUILD_DIR/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)
+PODS_PODFILE_DIR_PATH = ${SRCROOT}/.
+PODS_ROOT = ${SRCROOT}/Pods

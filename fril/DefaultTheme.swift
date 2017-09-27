@@ -7,3 +7,11 @@
 //
 
 import Foundation
+import UIKit
+import Gaikan
+public class DefaultTheme : Theme {
+//    var title: Style = [
+//        .color: UIColor.white,
+//        .font: UIFont.titleFont()
+//    ]
+}

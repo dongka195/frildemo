@@ -7,3 +7,9 @@
 //
 
 import Foundation
+extension UITableView
+{
+    func _register(_ clas : AnyClass){
+        self.register(UINib(nibName: String(describing: clas), bundle: nil), forCellReuseIdentifier: String(describing: clas))
+    }
+}

@@ -21,4 +21,15 @@ class MoreCell: UITableViewCell {
         // Configure the view for the selected state
     }
     
+    //Chỉnh sửa khoảng các giữa các cell
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        let f = contentView.frame
+        let fr = UIEdgeInsetsInsetRect(f, UIEdgeInsetsMake(0, 0, 0, 0))
+        contentView.frame = fr
+    }
+
+    
+    
 }

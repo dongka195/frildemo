@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+
+extension UICollectionView
+{
+    func _registerNib(_ name:AnyClass)
+    {
+       let nib = UINib(nibName: String(describing: name), bundle: nil)
+       self.register(nib, forCellWithReuseIdentifier: String(describing: name))
+    }
+}

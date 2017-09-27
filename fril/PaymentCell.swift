@@ -10,6 +10,9 @@ import UIKit
 
 class PaymentCell: UITableViewCell {
 
+    @IBOutlet weak var imv: UIImageView!
+    @IBOutlet weak var label: UILabel!
+    @IBOutlet weak var descriptionLabel: UILabel!
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

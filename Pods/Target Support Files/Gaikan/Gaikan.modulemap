@@ -1,0 +1,6 @@
+framework module Gaikan {
+  umbrella header "Gaikan-umbrella.h"
+
+  export *
+  module * { export * }
+}
